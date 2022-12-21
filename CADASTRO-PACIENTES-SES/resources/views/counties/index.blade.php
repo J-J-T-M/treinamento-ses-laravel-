@@ -27,6 +27,7 @@
    
 @empty
 <tr>
+    
 
 </tr>
 @endforelse
