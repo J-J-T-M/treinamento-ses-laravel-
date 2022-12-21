@@ -7,6 +7,7 @@ if (!function_exists('convert_date_to_pt_br')) {
     }
 }
 
+
 if(!function_exists('mask')){
     if (!function_exists('mask')) {
         function mask($val, $type): string
