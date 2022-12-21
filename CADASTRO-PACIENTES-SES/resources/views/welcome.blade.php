@@ -27,6 +27,7 @@
                 varius nisi ac finibus. Pellentesque viverra at leo at efficitur.
             </p>
         </div>
+        
         <div class="card-footer">
             <a href="{{ route('patients.index') }}" class="btn btn-primary">Pacientes</a>
             <a href="#" class="btn btn-primary">Cidades</a>
