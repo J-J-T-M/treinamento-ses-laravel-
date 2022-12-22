@@ -41,8 +41,10 @@
                             <td>
                                 <a href="{{ route('patients.show', $patient) }}" class="btn btn-info">Detalhe</a>
                                 <a href="{{ route('patients.edit', $patient) }}" class="btn btn-warning">Editar</a>
-                                <form action="#" method="POST"
-                                    style="display: inline-block" onclick="return confirm('Deseja Excluir?')">
+                                <form action="{{ route('patients.destroy', $patient) }}" 
+                                method="POST" 
+                                style="display: inline-block"
+                                onclick="return confirm('Deseja Excluir?')">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger">Apagar</button>
@@ -65,5 +67,6 @@
         </div>
 
     </div>
+    
 
 @endsection
