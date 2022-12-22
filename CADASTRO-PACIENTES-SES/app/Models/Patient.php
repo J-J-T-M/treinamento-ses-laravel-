@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Patient extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'cpf',
         'cns',
@@ -17,14 +18,13 @@ class Patient extends Model
         'phone',
         'county_id'
     ];
-    
-    protected $casts = [
-        'birth' => 'date: d/m/Y'
-    ];
+
+    // protected $casts = [
+    //     'birth' => 'date: d/m/Y'
+    // ];
 
     public function county()
     {
         return $this->belongsTo(County::class);
     }
-
 }
